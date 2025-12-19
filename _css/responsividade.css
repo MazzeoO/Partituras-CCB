@@ -1,0 +1,67 @@
+@media screen and (max-width: 935px){
+    header .bottom-header,.social {
+        display: none;
+    } .divisorio {
+        width: 29%;
+    }
+
+    main .acs-rap-btts {
+        flex-direction: column;
+    } .acs-rap-btts button {
+        height: 175px;
+        width: 500px;
+    }
+}
+
+
+/* para celulares com a tela menos q 650px, pq o site quebra em telas menores q isso.*/
+@media screen and (max-width: 650px){
+    header .bottom-header,.social, .centralizar-logo {
+        display: none;
+    } .divisorio {
+        width: 20%;
+    }
+
+    main .acs-rap-btts {
+        flex-direction: column;
+    } .acs-rap-btts button {
+        height: 150px;
+        width: 300px;
+    } 
+
+
+    footer .conjunto-flex {
+        flex-direction: column;
+    } footer span, footer p {
+        font-size: .5rem;
+        margin-top: 30px;
+    } footer .seccoes-rdp, footer .info{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    } footer img {
+        width: 150px;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+    .divisorio {
+        width: 10%;
+    }
+
+    .acs-rap-btts button {
+        height: 120px;
+        width: 250px;
+    } .acs-rap-txt {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    } .acs-rap-txt hr {
+        display: none;
+    } .acs-rap-txt h2 {
+        font-size: 1.4rem;
+    }
+}

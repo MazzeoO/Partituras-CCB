@@ -1,0 +1,289 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a, p, h2 {
+    font-family: 'Courier New', Courier, monospace;
+    color: #033D60;
+}
+
+html,body {
+    height: 100%;
+} 
+
+body {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+.interface {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+
+/* estilo do header */
+
+header {
+    width: 100%;
+    background-color: #D4D9E2;
+}
+
+header .interface {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.divisorio {
+    width: 35%;
+}
+
+.top-header {
+    background-color: white;
+    padding: 20px 4%;
+}
+
+.top-header .logo img {
+    max-width: 200px;
+}
+        /* social */
+
+.social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social a button{
+    font-size: 20px;
+    border-radius: 100%;
+    border: 1px solid;
+    height: 40px;
+    width: 40px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+/* Menu Mobile */
+
+header .btt-menu-mob i {
+    font-size: 40px;
+    border-radius: 35%;
+    border: 1px solid;
+    height: 40px;
+    width: 40px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.iconMenu {
+    transform: rotate(40deg);
+}
+
+
+
+
+/*menu*/
+
+header .bottom-header {
+    background-color: #ffff;
+    border: 2px solid #D4D9E2;
+}
+
+.bottom-header .interface {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bottom-header nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+}
+
+.bottom-header nav ul li a {
+    color: #033D60;
+    padding: 20px 40px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 20px;
+
+    display: block;
+    transition: .2s;
+}
+
+.bottom-header nav ul li a:hover {
+    background-color: #D4D9E2;
+    color: black;
+}
+    /* Menu drop */
+.menu-drop {
+    position: relative;
+}
+
+.menu-drop .drop-bar {
+    position: absolute;
+    background-color: #ffff;
+    border: 1px solid #D4D9E2;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    transition: 1s;
+}
+
+.menu-drop .drop-bar a{
+    padding: 20px;
+}
+
+.menu-drop:hover .drop-bar {
+    height: 330px;
+}
+
+/* Base - Main */
+
+.base {
+    padding: 40px 100px;
+}
+
+.acs-rap-txt {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.acs-rap-txt hr {
+  flex: 1;
+  border: none;
+  height: 1px;
+  background:#033D60;
+}
+
+.acs-rap-btts {
+    padding: 20px 0px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.acs-rap-btts button {
+    height: 150px;
+    width: 300px;
+
+    font-size: 20px;
+    font-weight: 700;
+
+    background-color: transparent;
+    border: 2px solid #D4D9E2;
+
+    cursor: pointer;
+    transition: .2s;
+}
+
+.acs-rap-btts i {
+    font-size: 60px;
+}
+
+.acs-rap-btts button:hover {
+    background-color: #D4D9E2;
+}
+
+/* Rodapé */
+
+footer {
+    background-color: #D4D9E2;
+    padding: 20px;
+    border-top: 5px solid #033D60;
+}
+
+footer a,span {
+    font-family: arial;
+    font-size: 15px;
+    font-weight: 600;
+    color: #033D60;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+footer i {
+    font-size: 20px;
+}
+
+footer hr {
+    border: 3px solid #033D60;
+}
+
+.info {
+    padding: 40px 0px;
+}
+
+.info img {
+    margin-bottom: 15px;
+}
+
+.rodape .interface .conjunto-flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.rodape .seccoes-rdp span{
+    font-size: 18px;
+    
+}
+
+.rodape .seccoes-rdp ul {
+    list-style-type: none;
+    margin-top: 10px;
+}
+
+.rodape a:hover {
+    text-decoration: underline;
+    color: #056eb0;
+}
+
+.rodape .copy-avs {
+    font-size: 15px;
+    text-align: center;
+}
+
+/* Hinos */
+
+#lista-hinos {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.card-hino {
+  border: 1px solid #D4D9E2;
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.card-hino:hover {
+  background-color: #D4D9E2;
+}
+
+/* Hinos - JS */
+
+#lista-hinos h3,p,span{
+    font-family: arial;
+}
+
+.card-hino {
+    height: 100px;
+}
